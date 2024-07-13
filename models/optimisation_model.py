@@ -16,6 +16,6 @@ def predict(model, input_data):
 
 if __name__ == "__main__":
     model = train_model()
-    input_data = [1, 2]  # Replace with actual input
+    input_data = [1, 2]  
     prediction = predict(model, input_data)
     print(f"Prediction: {prediction}")
