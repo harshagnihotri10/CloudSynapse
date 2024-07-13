@@ -35,3 +35,17 @@ This project visualizes Makefile dependencies and provides AI-powered optimizati
     ```
 
 
+## Developer Guide
+
+### Project Structure
+- `src/`: Rust source code.
+- `web/`: React frontend.
+- `models/`: AI models.
+- `tests/`: Unit tests.
+- `scripts/`: Deployment scripts.
+- `docs/`: Documentation.
+
+### Development Setup
+1. Clone the repository and set up your development environment.
+2. Follow the installation steps to build and run the project.
+
