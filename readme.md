@@ -118,16 +118,60 @@ cd CloudSynapse
 ---
 
 ## Code Structure
+
+- **`.github/workflows/`**: CI/CD configuration files
+  - **`ci.yml`**: CI/CD pipeline configuration using GitHub Actions
+
+- **`k8s/`**: Kubernetes deployment and service configuration
+  - **`deployment.yaml`**: Kubernetes deployment manifest
+  - **`service.yaml`**: Service definition for exposing backend
+  - **`ingress.yaml`**: Ingress configuration for routing traffic
+
+- **`models/`**: AI/ML models for Makefile optimization
+  - **`optimization_model.py`**: Python-based AI model for optimization
+  - **`__init__.py`**: Package initializer
+
+- **`scripts/`**: Deployment and utility scripts
+  - **`deploy.sh`**: Automates project deployment to AWS
+  - **`setup_env.sh`**: Environment setup script
+  - **`cleanup.sh`**: Cleans up the deployment environment
+
 - **`src/`**: Rust source code for backend services
   - **`controllers/`**: API endpoints
-  - **`services/`**: Business logic and AI model interaction
+    - **`makefile_controller.rs`**: Controller for handling Makefile-related requests
+  - **`services/`**: Business logic and service layer
+    - **`makefile_service.rs`**: Service for Makefile parsing and graph generation
   - **`utils/`**: Utility functions
+    - **`graph_generator.rs`**: Logic for generating visual dependency graphs
+  - **`models/`**: Rust models for AI integration and data processing
+    - **`optimization_model.rs`**: AI interaction logic in Rust
+  - **`main.rs`**: Entry point for the Rust backend
+
+- **`terraform/`**: Infrastructure as Code using Terraform
+  - **`main.tf`**: Main configuration for setting up cloud infrastructure
+  - **`variables.tf`**: Customizable variables for the infrastructure
+  - **`outputs.tf`**: Outputs from the infrastructure setup
+  - **`provider.tf`**: Cloud provider configurations (e.g., AWS, GCP)
+
 - **`web/`**: React.js frontend application
-  - **`components/`**: Reusable UI components
-  - **`services/`**: API calls for the backend
-- **`models/`**: AI models for optimization recommendations
-- **`tests/`**: Unit and integration tests
-- **`scripts/`**: Deployment scripts for AWS infrastructure
+  - **`public/`**: Static assets and HTML templates
+    - **`index.html`**: Main HTML file for the React app
+  - **`src/`**: React source code
+    - **`components/`**: Reusable UI components
+      - **`GraphVisualizer.js`**: Component for visualizing Makefile dependencies
+    - **`services/`**: API interaction logic
+      - **`apiService.js`**: Service for backend API calls
+    - **`App.js`**: Main React application component
+  - **`package.json`**: Project metadata and Node.js dependencies
+  - **`webpack.config.js`**: Webpack configuration for bundling the frontend
+
+- **`Cargo.toml`**: Rust project configuration (dependencies and metadata)
+
+- **`README.md`**: Project documentation
+
+- **`LICENSE`**: License for the project (e.g., MIT)
+
+- **`.gitignore`**: Ignored files and directories for Git
 
 ---
 
