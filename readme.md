@@ -139,8 +139,8 @@ cd CloudSynapse
 ---
 
 ## Contributing
-We welcome contributions! Please ensure to:
-- Follow our code standards.
+Contributions are welcome! Please ensure to:
+- Follow the code standards.
 - Write tests for new features.
 - Submit PRs with meaningful commit messages.
 
