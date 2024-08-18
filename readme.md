@@ -17,7 +17,7 @@ A cloud-deployed intelligent Makefile dependency visualizer, leveraging AI to su
 - [API Reference](#api-reference)
 - [Code Structure](#code-structure)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ---
 
@@ -169,8 +169,6 @@ cd CloudSynapse
 
 - **`README.md`**: Project documentation
 
-- **`LICENSE`**: License for the project (e.g., MIT)
-
 - **`.gitignore`**: Ignored files and directories for Git
 
 ---
@@ -187,9 +185,4 @@ Contributions are welcome! Please ensure to:
 - Follow the code standards.
 - Write tests for new features.
 - Submit PRs with meaningful commit messages.
-
----
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
